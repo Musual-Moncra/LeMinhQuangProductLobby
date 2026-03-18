@@ -10,7 +10,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 -- Dependiences
 local runFramework = require(ReplicatedStorage.Modules.Shared.runFramework)
 
-local Locations = {}
+local Locations = {
+    ReplicatedStorage.Clients.Player
+}
 
 -- Handle
 runFramework(Locations)
